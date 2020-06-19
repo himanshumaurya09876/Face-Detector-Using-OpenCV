@@ -4,7 +4,7 @@ import cv2
 
 def collectData():
 	cam=cv2.VideoCapture(0) #creation of object which links to webcam
-	faceCascade=cv2.CascadeClassifier("https://github.com/opencv/opencv/raw/master/data/haarcascades/haarcascade_frontalface_default.xml") #creation of an object which contains imortant function detectMultiScale
+	faceCascade=cv2.CascadeClassifier("haarcascade_frontalface_default.xml") #creation of an object which contains imortant function detectMultiScale
 
 	faceData=[]
 	dataSetPath="./faceDataFile/"
